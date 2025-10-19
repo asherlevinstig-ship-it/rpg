@@ -1,0 +1,22 @@
+{
+  "name": "rpg-colyseus-server",
+  "version": "1.0.0",
+  "description": "Colyseus Server for the RPG project.",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "npx babel . --out-dir build --extensions \".js\" --copy-files --ignore \"node_modules/**,build/**\"",
+    "start": "node build/index.js",
+    "dev": "node index.js"
+  },
+  "dependencies": {
+    "colyseus": "^0.16.0",
+    "express": "^4.19.2",
+    "@colyseus/tools": "^0.16.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.23.9",
+    "@babel/core": "^7.23.9",
+    "@babel/plugin-proposal-decorators": "^7.23.9",
+    "@babel/preset-env": "^7.23.9"
+  }
+}
