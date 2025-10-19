@@ -218,24 +218,23 @@ class GameRoom extends colyseus.Room {
 // 4. SET UP AND START THE GAME SERVER
 // ====================================================================================
 
-const app = express();
-app.use(express.json());
-const gameServer = new colyseus.Server({ server: http.createServer(app) });
-gameServer.define('game_room', GameRoom);
-const port = process.env.PORT || 2567;
-gameServer.listen(port);
-console.log(`🚀 Server is listening on ws://localhost:${port}`);
-
+const express = require("express");
 const { listen } = require("@colyseus/tools");
+const { GameRoom } = require("./rooms/GameRoom");
 
 listen({
   options: {
     initializeGameServer: (gameServer) => {
-      gameServer.define('game_room', GameRoom);
+      // Define your rooms here
+      gameServer.define("game_room", GameRoom);
     },
   },
+
+  // Optional: customize Express (HTTP endpoints)
   initializeExpress: (app) => {
     app.use(express.json());
-    app.get("/", (req, res) => res.send("Aetheria server is running."));
+    app.get("/", (req, res) => {
+      res.send("Aetheria server is running.");
+    });
   },
 });
