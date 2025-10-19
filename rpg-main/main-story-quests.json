@@ -1,0 +1,16 @@
+{
+  "MSQ_01": {
+    "title": "A Dangerous World",
+    "startNpc": "Elder Gideon",
+    "endNpc": "Elder Gideon",
+    "objectives": [
+      { "type": "kill", "target": "Slime", "amount": 3 }
+    ],
+    "rewards": {
+      "xp": 50,
+      "items": ["HealthPotion", "TrainingSword"]
+    },
+    "startDialogue": "The slimes outside the village have grown aggressive. Please dispatch 3 of them to ensure our safety.",
+    "endDialogue": "Excellent work. You've proven your potential. Take this as a reward. This sword should serve you better than your fists."
+  }
+}
