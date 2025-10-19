@@ -225,3 +225,17 @@ gameServer.define('game_room', GameRoom);
 const port = process.env.PORT || 2567;
 gameServer.listen(port);
 console.log(`🚀 Server is listening on ws://localhost:${port}`);
+
+const { listen } = require("@colyseus/tools");
+
+listen({
+  options: {
+    initializeGameServer: (gameServer) => {
+      gameServer.define('game_room', GameRoom);
+    },
+  },
+  initializeExpress: (app) => {
+    app.use(express.json());
+    app.get("/", (req, res) => res.send("Aetheria server is running."));
+  },
+});

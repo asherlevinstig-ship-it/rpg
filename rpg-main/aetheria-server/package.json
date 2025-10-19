@@ -9,11 +9,12 @@
     "dev": "node index.js"
   },
   "dependencies": {
-    "colyseus": "^0.16.0",
+    "@colyseus/schema": "^3.0.64",
+    "@colyseus/tools": "^0.16.14",
+    "colyseus": "^0.16.5",
     "express": "^4.19.2",
-    "@colyseus/tools": "^0.16.0",
-    "three": "^0.160.0",
-    "simplex-noise": "^4.0.1"
+    "simplex-noise": "^4.0.1",
+    "three": "^0.160.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.23.9",
