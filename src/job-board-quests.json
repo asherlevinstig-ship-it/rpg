@@ -1,0 +1,20 @@
+[
+  {
+    "id": "JOB_SLAY_GOBLINS_01",
+    "title": "Goblin Menace",
+    "description": "Slay 5 Goblins in the nearby forest.",
+    "objectives": [
+      { "type": "kill", "target": "Goblin", "amount": 5 }
+    ],
+    "rewards": { "xp": 20, "gold": 15 }
+  },
+  {
+    "id": "JOB_COLLECT_HERBS_01",
+    "title": "Herbalist's Request",
+    "description": "Collect 10 Sunpetal Herbs.",
+    "objectives": [
+      { "type": "collect", "item": "SunpetalHerb", "amount": 10 }
+    ],
+    "rewards": { "xp": 15, "gold": 25 }
+  }
+]
