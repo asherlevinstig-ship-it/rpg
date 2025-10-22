@@ -1,7 +1,7 @@
 // ItemData.js
 // This file will store the definitions for all items in the game.
 
-export const HealthPotion = {
+const HealthPotion = {
     id: 'item_health_potion_01',
     name: 'Health Potion',
     type: 'Consumable',
@@ -13,7 +13,7 @@ export const HealthPotion = {
 };
 
 // --- NEW WEAPON ---
-export const RustySword = {
+const RustySword = {
     id: 'wep_rusty_sword_01',
     name: 'Rusty Sword',
     type: 'Weapon',
@@ -26,7 +26,7 @@ export const RustySword = {
 };
 
 // --- NEW ARMOR ---
-export const LeatherTunic = {
+const LeatherTunic = {
     id: 'arm_leather_tunic_01',
     name: 'Leather Tunic',
     type: 'Armor',
@@ -38,12 +38,18 @@ export const LeatherTunic = {
     }
 };
 
-
-export const TrainingSword = {
+const TrainingSword = {
     id: 'wep_wood_sword_01',
     name: 'Training Sword',
     type: 'Weapon',
     slot: 'mainHand',
     description: 'A simple wooden sword for practice. Better than your fists.',
     damage: 4
+};
+
+module.exports = {
+    HealthPotion,
+    RustySword,
+    LeatherTunic,
+    TrainingSword
 };

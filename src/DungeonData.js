@@ -1,10 +1,9 @@
 // DungeonData.js
-import * as THREE from 'https://unpkg.com/three@0.157.0/build/three.module.js';
-
-import { STONE, COBBLESTONE, OBSIDIAN, DIRT } from './BlockData.js';
+const THREE = require('three');
+const { STONE, COBBLESTONE, OBSIDIAN, DIRT } = require('./BlockData.js');
 
 // Defines the properties for each dungeon rank
-export const RANKS = {
+const RANKS = {
     IRON: {
         name: 'Iron',
         color: new THREE.Color(0x8d8d8d), // Dull gray
@@ -43,7 +42,7 @@ export const RANKS = {
 };
 
 // A helper function to pick a rank based on weighted probability
-export function getWeightedRandomRank(prng) {
+function getWeightedRandomRank(prng) {
     const totalWeight = Object.values(RANKS).reduce((sum, rank) => sum + rank.weight, 0);
     let random = prng() * totalWeight;
 
@@ -56,9 +55,8 @@ export function getWeightedRandomRank(prng) {
     return RANKS.IRON; // Fallback
 }
 
-
 // Defines the properties for each dungeon theme
-export const DUNGEON_THEMES = {
+const DUNGEON_THEMES = {
     CAVE: {
         name: 'Cave',
         palette: {
@@ -75,4 +73,10 @@ export const DUNGEON_THEMES = {
             detail: STONE,
         }
     }
+};
+
+module.exports = {
+    RANKS,
+    getWeightedRandomRank,
+    DUNGEON_THEMES
 };

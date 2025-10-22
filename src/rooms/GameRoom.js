@@ -1,7 +1,7 @@
 // src/rooms/GameRoom.js
 
 const { Room } = require('colyseus');
-const { Schema, MapSchema, ArraySchema } = require('@colyseus/schema');
+const { Schema, MapSchema, ArraySchema, defineTypes } = require('@colyseus/schema');
 const THREE = require('three');
 const fs = require('fs');
 const path = require('path');
@@ -55,7 +55,7 @@ class SyncedItem extends Schema {
         this.name = '';
     }
 }
-Schema.defineTypes(SyncedItem, {
+defineTypes(SyncedItem, {
     id: "string",
     name: "string"
 });
@@ -68,7 +68,7 @@ class ActiveQuestObjective extends Schema {
         this.amount = 1;
     }
 }
-Schema.defineTypes(ActiveQuestObjective, {
+defineTypes(ActiveQuestObjective, {
     description: "string",
     progress: "number",
     amount: "number"
@@ -83,7 +83,7 @@ class ActiveQuest extends Schema {
         this.objectives = new ArraySchema();
     }
 }
-Schema.defineTypes(ActiveQuest, {
+defineTypes(ActiveQuest, {
     id: "string",
     title: "string",
     readyForTurnIn: "boolean",
@@ -108,7 +108,7 @@ class Player extends Schema {
         this.completedQuests = new ArraySchema();
     }
 }
-Schema.defineTypes(Player, {
+defineTypes(Player, {
     username: "string",
     x: "float32",
     y: "float32",
@@ -138,7 +138,7 @@ class Enemy extends Schema {
         this.maxHealth = 0;
     }
 }
-Schema.defineTypes(Enemy, {
+defineTypes(Enemy, {
     id: "string",
     type: "string",
     name: "string",
@@ -160,7 +160,7 @@ class NPC extends Schema {
         this.z = 0;
     }
 }
-Schema.defineTypes(NPC, {
+defineTypes(NPC, {
     id: "string",
     name: "string",
     x: "float32",
@@ -179,7 +179,7 @@ class Portal extends Schema {
         this.color = '';
     }
 }
-Schema.defineTypes(Portal, {
+defineTypes(Portal, {
     id: "string",
     name: "string",
     x: "float32",
@@ -197,7 +197,7 @@ class MyRoomState extends Schema {
         this.enemies = new MapSchema();
     }
 }
-Schema.defineTypes(MyRoomState, {
+defineTypes(MyRoomState, {
     players: { map: Player },
     npcs: { map: NPC },
     portals: { map: Portal },

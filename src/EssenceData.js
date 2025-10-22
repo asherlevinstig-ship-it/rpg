@@ -1,9 +1,9 @@
 // EssenceData.js
 
-export const LesserMightEssence = {
+const LesserMightEssence = {
     id: "essence_might_01",
     name: "Lesser Might Essence",
-    type: "Essence", // Required for inventory system
+    type: "Essence",
     description: "Grants basic physical enhancement abilities.",
     abilities: [
         {
@@ -26,7 +26,7 @@ export const LesserMightEssence = {
 // === HWFWM Character-Themed Essences ===
 
 // Jason
-export const DarkEssence = {
+const DarkEssence = {
   id: "essence_dark_01",
   name: "Dark Essence",
   type: "Essence",
@@ -47,7 +47,7 @@ export const DarkEssence = {
   awakeningStones: [null, null, null, null, null]
 };
 
-export const BloodEssence = {
+const BloodEssence = {
   id: "essence_blood_01",
   name: "Blood Essence",
   type: "Essence",
@@ -68,7 +68,7 @@ export const BloodEssence = {
   awakeningStones: [null, null, null, null, null]
 };
 
-export const SinEssence = {
+const SinEssence = {
   id: "essence_sin_01",
   name: "Sin Essence",
   type: "Essence",
@@ -89,7 +89,7 @@ export const SinEssence = {
   awakeningStones: [null, null, null, null, null]
 };
 
-export const DoomEssence = {
+const DoomEssence = {
   id: "essence_doom_01",
   name: "Doom Essence",
   type: "Essence",
@@ -111,7 +111,7 @@ export const DoomEssence = {
 };
 
 // Humphrey
-export const MagicEssence_Humphrey = {
+const MagicEssence_Humphrey = {
   id: "essence_magic_01",
   name: "Magic Essence",
   type: "Essence",
@@ -132,7 +132,7 @@ export const MagicEssence_Humphrey = {
   awakeningStones: [null, null, null, null, null]
 };
 
-export const MightEssence_Humphrey = {
+const MightEssence_Humphrey = {
   id: "essence_might_02",
   name: "Might Essence",
   type: "Essence",
@@ -153,7 +153,7 @@ export const MightEssence_Humphrey = {
   awakeningStones: [null, null, null, null, null]
 };
 
-export const WingEssence = {
+const WingEssence = {
   id: "essence_wing_01",
   name: "Wing Essence",
   type: "Essence",
@@ -167,14 +167,14 @@ export const WingEssence = {
     description: "Leap and slam, damaging and briefly launching enemies.",
     type: "AOE_DAMAGE",
     baseDamage: 7,
-    scalingStat: "speed", // Changed from agility to match baseStats
+    scalingStat: "speed",
     range: 3.5,
     vfx: "createRazorDiveEffect"
   }],
   awakeningStones: [null, null, null, null, null]
 };
 
-export const DragonEssence = {
+const DragonEssence = {
   id: "essence_dragon_01",
   name: "Dragon Essence",
   type: "Essence",
@@ -196,7 +196,7 @@ export const DragonEssence = {
 };
 
 // Sophie
-export const SwiftEssence = {
+const SwiftEssence = {
   id: "essence_swift_01",
   name: "Swift Essence",
   type: "Essence",
@@ -210,14 +210,14 @@ export const SwiftEssence = {
     description: "Short-range dash that damages in a small radius at start and end.",
     type: "AOE_DAMAGE",
     baseDamage: 6,
-    scalingStat: "speed", // Changed from agility
+    scalingStat: "speed",
     range: 2.5,
     vfx: "createBlinkStrikeEffect"
   }],
   awakeningStones: [null, null, null, null, null]
 };
 
-export const WindEssence = {
+const WindEssence = {
   id: "essence_wind_02",
   name: "Wind Essence",
   type: "Essence",
@@ -231,14 +231,14 @@ export const WindEssence = {
     description: "A sweeping arc that damages and applies Slow.",
     type: "AOE_DAMAGE",
     baseDamage: 7,
-    scalingStat: "speed", // Changed from agility
+    scalingStat: "speed",
     range: 5.0,
     vfx: "createWindWaveEffect"
   }],
   awakeningStones: [null, null, null, null, null]
 };
 
-export const BalanceEssence = {
+const BalanceEssence = {
   id: "essence_balance_01",
   name: "Balance Essence",
   type: "Essence",
@@ -259,7 +259,7 @@ export const BalanceEssence = {
   awakeningStones: [null, null, null, null, null]
 };
 
-export const MysticEssence = {
+const MysticEssence = {
   id: "essence_mystic_01",
   name: "Mystic Essence",
   type: "Essence",
@@ -281,7 +281,7 @@ export const MysticEssence = {
 };
 
 // Clive
-export const RuneEssence = {
+const RuneEssence = {
   id: "essence_rune_01",
   name: "Rune Essence",
   type: "Essence",
@@ -302,7 +302,7 @@ export const RuneEssence = {
   awakeningStones: [null, null, null, null, null]
 };
 
-export const KarmicEssence = {
+const KarmicEssence = {
   id: "essence_karmic_01",
   name: "Karmic Essence",
   type: "Essence",
@@ -324,7 +324,7 @@ export const KarmicEssence = {
 };
 
 // Belinda
-export const TrapEssence = {
+const TrapEssence = {
   id: "essence_trap_01",
   name: "Trap Essence",
   type: "Essence",
@@ -345,7 +345,7 @@ export const TrapEssence = {
   awakeningStones: [null, null, null, null, null]
 };
 
-export const CharlatanEssence = {
+const CharlatanEssence = {
   id: "essence_charlatan_01",
   name: "Charlatan Essence",
   type: "Essence",
@@ -367,7 +367,7 @@ export const CharlatanEssence = {
 };
 
 // Farrah
-export const VolcanoEssence = {
+const VolcanoEssence = {
   id: "essence_volcano_01",
   name: "Volcano Essence",
   type: "Essence",
@@ -388,7 +388,7 @@ export const VolcanoEssence = {
   awakeningStones: [null, null, null, null, null]
 };
 
-export const EarthEssence = {
+const EarthEssence = {
   id: "essence_earth_02",
   name: "Earth Essence",
   type: "Essence",
@@ -410,7 +410,7 @@ export const EarthEssence = {
 };
 
 // Neil (healer/support)
-export const ShieldEssence = {
+const ShieldEssence = {
   id: "essence_shield_01",
   name: "Shield Essence",
   type: "Essence",
@@ -429,4 +429,27 @@ export const ShieldEssence = {
     vfx: "createGuardianPulseEffect"
   }],
   awakeningStones: [null, null, null, null, null]
+};
+
+module.exports = {
+    LesserMightEssence,
+    DarkEssence,
+    BloodEssence,
+    SinEssence,
+    DoomEssence,
+    MagicEssence_Humphrey,
+    MightEssence_Humphrey,
+    WingEssence,
+    DragonEssence,
+    SwiftEssence,
+    WindEssence,
+    BalanceEssence,
+    MysticEssence,
+    RuneEssence,
+    KarmicEssence,
+    TrapEssence,
+    CharlatanEssence,
+    VolcanoEssence,
+    EarthEssence,
+    ShieldEssence
 };
