@@ -1,4 +1,5 @@
 // game.js
+console.log("🎮 GAME.JS STARTED!");
 
 import * as THREE from 'three';
 // --- POST-PROCESSING IMPORTS ---
@@ -71,26 +72,31 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 async function connect() {
+    console.log("🔌 1. Connect function started");
     const username = usernameInput.value.trim() || 'Player' + Math.floor(Math.random() * 1000);
     connectionStatus.textContent = 'Connecting...';
     joinButton.disabled = true;
 
     try {
-        // Attempt to join a room named "game_room"
+        console.log("🔌 2. Attempting to join room...");
         gameRoom = await colyseusClient.joinOrCreate('game_room', { username });
 
-        console.log('Successfully joined room:', gameRoom.name);
-        console.log('My session ID:', gameRoom.sessionId);
+        console.log('🔌 3. Successfully joined room:', gameRoom.name);
+        console.log('🔌 4. My session ID:', gameRoom.sessionId);
         
         connectionPanel.classList.add('hidden');
-        loadingScreen.style.display = 'flex'; // Show loading screen for asset loading
+        loadingScreen.style.display = 'flex';
         
-        // Create and initialize the game instance
+        console.log("🔌 5. Creating game instance...");
         game = new Game(gameRoom);
+        
+        console.log("🔌 6. Calling game.init()...");
         await game.init();
+        
+        console.log("🔌 7. Game.init() completed!");
 
     } catch (e) {
-        console.error("Failed to join room", e);
+        console.error("❌ Failed to join room", e);
         connectionStatus.textContent = 'Connection Failed. Is the server running?';
         joinButton.disabled = false;
     }
@@ -118,6 +124,8 @@ class Game {
     }
 
     async init() {
+            console.log("🎮 1. Game.init() started");
+
         // --- RENDERER & SCENE SETUP ---
         this.renderer.setSize(window.innerWidth, window.innerHeight);
         this.renderer.shadowMap.enabled = true;
@@ -241,6 +249,7 @@ class Game {
     }
 
     async loadInitialAssets() {
+         console.log("📦 1. Starting asset loading...");
         try {
             const [loadedQuestions] = await Promise.all([
                 fetch('questions.json').then(response => response.json()),

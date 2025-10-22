@@ -3,7 +3,7 @@
 /** -------------------- Core Stones -------------------- */
 
 /** Belongs to: Lesser Might Essence */
-const HeavyStone = {
+export const HeavyStone = {
   id: 'stone_heavy',
   name: 'Heavy Stone',
   type: 'awakening stone',
@@ -18,7 +18,7 @@ const HeavyStone = {
 };
 
 /** Belongs to: Lesser Might Essence */
-const StoneOfImpact = {
+export const StoneOfImpact = {
   id: 'stone_impact',
   name: 'Stone of Impact',
   type: 'awakening stone',
@@ -34,7 +34,7 @@ const StoneOfImpact = {
 };
 
 /** Universal */
-const LeechingStone = {
+export const LeechingStone = {
   id: 'stone_leeching',
   name: 'Leeching Stone',
   type: 'awakening stone',
@@ -43,7 +43,7 @@ const LeechingStone = {
 };
 
 /** Universal */
-const RendingStone = {
+export const RendingStone = {
   id: 'stone_rending',
   name: 'Rending Stone',
   type: 'awakening stone',
@@ -54,7 +54,7 @@ const RendingStone = {
 /** -------------------- Character-Flavoured Stones -------------------- */
 
 /** Jason-flavoured (Sin/Dark/Doom/Blood themes) */
-const StoneOfJudgment = {
+export const StoneOfJudgment = {
   id: 'stone_judgment',
   name: 'Stone of Judgment',
   type: 'awakening stone',
@@ -67,7 +67,7 @@ const StoneOfJudgment = {
   ]
 };
 
-const StoneOfInevitability = {
+export const StoneOfInevitability = {
   id: 'stone_inevitability',
   name: 'Stone of Inevitability',
   type: 'awakening stone',
@@ -79,7 +79,7 @@ const StoneOfInevitability = {
   ]
 };
 
-const StoneOfHemorrhage = {
+export const StoneOfHemorrhage = {
   id: 'stone_hemorrhage',
   name: 'Stone of Hemorrhage',
   type: 'awakening stone',
@@ -92,7 +92,7 @@ const StoneOfHemorrhage = {
 };
 
 /** Humphrey-flavoured (Might/Wing/Dragon/Magic themes) */
-const StoneOfTheChampion = {
+export const StoneOfTheChampion = {
   id: 'stone_champion',
   name: 'Stone of the Champion',
   type: 'awakening stone',
@@ -104,7 +104,7 @@ const StoneOfTheChampion = {
   ]
 };
 
-const StoneOfWingedAssault = {
+export const StoneOfWingedAssault = {
   id: 'stone_winged_assault',
   name: 'Stone of Winged Assault',
   type: 'awakening stone',
@@ -117,7 +117,7 @@ const StoneOfWingedAssault = {
 };
 
 /** Sophie-flavoured (Swift/Wind/Balance/Mystic themes) */
-const StoneOfTheMoment = {
+export const StoneOfTheMoment = {
   id: 'stone_moment',
   name: 'Stone of the Moment',
   type: 'awakening stone',
@@ -129,7 +129,7 @@ const StoneOfTheMoment = {
   ]
 };
 
-const StoneOfTheSky = {
+export const StoneOfTheSky = {
   id: 'stone_sky',
   name: 'Stone of the Sky',
   type: 'awakening stone',
@@ -142,7 +142,7 @@ const StoneOfTheSky = {
 };
 
 /** Clive-flavoured (Rune/Karmic themes) */
-const StoneOfRunicEcho = {
+export const StoneOfRunicEcho = {
   id: 'stone_runic_echo',
   name: 'Stone of Runic Echo',
   type: 'awakening stone',
@@ -154,7 +154,7 @@ const StoneOfRunicEcho = {
   ]
 };
 
-const StoneOfEquilibrium = {
+export const StoneOfEquilibrium = {
   id: 'stone_equilibrium',
   name: 'Stone of Equilibrium',
   type: 'awakening stone',
@@ -167,7 +167,7 @@ const StoneOfEquilibrium = {
 };
 
 /** Belinda-flavoured (Charlatan/Trap themes) */
-const StoneOfSpeciousAllies = {
+export const StoneOfSpeciousAllies = {
   id: 'stone_specious_allies',
   name: 'Stone of Specious Allies',
   type: 'awakening stone',
@@ -179,7 +179,7 @@ const StoneOfSpeciousAllies = {
   ]
 };
 
-const StoneOfSnarework = {
+export const StoneOfSnarework = {
   id: 'stone_snarework',
   name: 'Stone of Snarework',
   type: 'awakening stone',
@@ -192,7 +192,7 @@ const StoneOfSnarework = {
 };
 
 /** Farrah-flavoured (Volcano/Earth themes) */
-const StoneOfCinderfall = {
+export const StoneOfCinderfall = {
   id: 'stone_cinderfall',
   name: 'Stone of Cinderfall',
   type: 'awakening stone',
@@ -204,7 +204,7 @@ const StoneOfCinderfall = {
   ]
 };
 
-const StoneOfObsidianAegis = {
+export const StoneOfObsidianAegis = {
   id: 'stone_obsidian_aegis',
   name: 'Stone of Obsidian Aegis',
   type: 'awakening stone',
@@ -217,7 +217,7 @@ const StoneOfObsidianAegis = {
 };
 
 /** Neil-flavoured (Shield/support themes) */
-const StoneOfRenewal = {
+export const StoneOfRenewal = {
   id: 'stone_renewal',
   name: 'Stone of Renewal',
   type: 'awakening stone',
@@ -229,7 +229,7 @@ const StoneOfRenewal = {
   ]
 };
 
-const StoneOfProsperity = {
+export const StoneOfProsperity = {
   id: 'stone_prosperity',
   name: 'Stone of Prosperity',
   type: 'awakening stone',
@@ -239,26 +239,4 @@ const StoneOfProsperity = {
     { type: 'APPLY_BUFF', name: 'Barrier Dividend', duration: 4, shieldAmount: 16 },
     { type: 'COOLDOWN', seconds: -1 }
   ]
-};
-
-module.exports = {
-    HeavyStone,
-    StoneOfImpact,
-    LeechingStone,
-    RendingStone,
-    StoneOfJudgment,
-    StoneOfInevitability,
-    StoneOfHemorrhage,
-    StoneOfTheChampion,
-    StoneOfWingedAssault,
-    StoneOfTheMoment,
-    StoneOfTheSky,
-    StoneOfRunicEcho,
-    StoneOfEquilibrium,
-    StoneOfSpeciousAllies,
-    StoneOfSnarework,
-    StoneOfCinderfall,
-    StoneOfObsidianAegis,
-    StoneOfRenewal,
-    StoneOfProsperity
 };

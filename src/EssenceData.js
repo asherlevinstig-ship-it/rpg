@@ -1,6 +1,6 @@
 // EssenceData.js
 
-const LesserMightEssence = {
+export const LesserMightEssence = {
     id: "essence_might_01",
     name: "Lesser Might Essence",
     type: "Essence",
@@ -26,7 +26,7 @@ const LesserMightEssence = {
 // === HWFWM Character-Themed Essences ===
 
 // Jason
-const DarkEssence = {
+export const DarkEssence = {
   id: "essence_dark_01",
   name: "Dark Essence",
   type: "Essence",
@@ -47,7 +47,7 @@ const DarkEssence = {
   awakeningStones: [null, null, null, null, null]
 };
 
-const BloodEssence = {
+export const BloodEssence = {
   id: "essence_blood_01",
   name: "Blood Essence",
   type: "Essence",
@@ -68,7 +68,7 @@ const BloodEssence = {
   awakeningStones: [null, null, null, null, null]
 };
 
-const SinEssence = {
+export const SinEssence = {
   id: "essence_sin_01",
   name: "Sin Essence",
   type: "Essence",
@@ -89,7 +89,7 @@ const SinEssence = {
   awakeningStones: [null, null, null, null, null]
 };
 
-const DoomEssence = {
+export const DoomEssence = {
   id: "essence_doom_01",
   name: "Doom Essence",
   type: "Essence",
@@ -111,7 +111,7 @@ const DoomEssence = {
 };
 
 // Humphrey
-const MagicEssence_Humphrey = {
+export const MagicEssence_Humphrey = {
   id: "essence_magic_01",
   name: "Magic Essence",
   type: "Essence",
@@ -132,7 +132,7 @@ const MagicEssence_Humphrey = {
   awakeningStones: [null, null, null, null, null]
 };
 
-const MightEssence_Humphrey = {
+export const MightEssence_Humphrey = {
   id: "essence_might_02",
   name: "Might Essence",
   type: "Essence",
@@ -153,7 +153,7 @@ const MightEssence_Humphrey = {
   awakeningStones: [null, null, null, null, null]
 };
 
-const WingEssence = {
+export const WingEssence = {
   id: "essence_wing_01",
   name: "Wing Essence",
   type: "Essence",
@@ -174,7 +174,7 @@ const WingEssence = {
   awakeningStones: [null, null, null, null, null]
 };
 
-const DragonEssence = {
+export const DragonEssence = {
   id: "essence_dragon_01",
   name: "Dragon Essence",
   type: "Essence",
@@ -196,7 +196,7 @@ const DragonEssence = {
 };
 
 // Sophie
-const SwiftEssence = {
+export const SwiftEssence = {
   id: "essence_swift_01",
   name: "Swift Essence",
   type: "Essence",
@@ -217,7 +217,7 @@ const SwiftEssence = {
   awakeningStones: [null, null, null, null, null]
 };
 
-const WindEssence = {
+export const WindEssence = {
   id: "essence_wind_02",
   name: "Wind Essence",
   type: "Essence",
@@ -238,7 +238,7 @@ const WindEssence = {
   awakeningStones: [null, null, null, null, null]
 };
 
-const BalanceEssence = {
+export const BalanceEssence = {
   id: "essence_balance_01",
   name: "Balance Essence",
   type: "Essence",
@@ -259,7 +259,7 @@ const BalanceEssence = {
   awakeningStones: [null, null, null, null, null]
 };
 
-const MysticEssence = {
+export const MysticEssence = {
   id: "essence_mystic_01",
   name: "Mystic Essence",
   type: "Essence",
@@ -281,7 +281,7 @@ const MysticEssence = {
 };
 
 // Clive
-const RuneEssence = {
+export const RuneEssence = {
   id: "essence_rune_01",
   name: "Rune Essence",
   type: "Essence",
@@ -302,7 +302,7 @@ const RuneEssence = {
   awakeningStones: [null, null, null, null, null]
 };
 
-const KarmicEssence = {
+export const KarmicEssence = {
   id: "essence_karmic_01",
   name: "Karmic Essence",
   type: "Essence",
@@ -324,7 +324,7 @@ const KarmicEssence = {
 };
 
 // Belinda
-const TrapEssence = {
+export const TrapEssence = {
   id: "essence_trap_01",
   name: "Trap Essence",
   type: "Essence",
@@ -345,7 +345,7 @@ const TrapEssence = {
   awakeningStones: [null, null, null, null, null]
 };
 
-const CharlatanEssence = {
+export const CharlatanEssence = {
   id: "essence_charlatan_01",
   name: "Charlatan Essence",
   type: "Essence",
@@ -367,7 +367,7 @@ const CharlatanEssence = {
 };
 
 // Farrah
-const VolcanoEssence = {
+export const VolcanoEssence = {
   id: "essence_volcano_01",
   name: "Volcano Essence",
   type: "Essence",
@@ -388,7 +388,7 @@ const VolcanoEssence = {
   awakeningStones: [null, null, null, null, null]
 };
 
-const EarthEssence = {
+export const EarthEssence = {
   id: "essence_earth_02",
   name: "Earth Essence",
   type: "Essence",
@@ -410,7 +410,7 @@ const EarthEssence = {
 };
 
 // Neil (healer/support)
-const ShieldEssence = {
+export const ShieldEssence = {
   id: "essence_shield_01",
   name: "Shield Essence",
   type: "Essence",
@@ -429,27 +429,4 @@ const ShieldEssence = {
     vfx: "createGuardianPulseEffect"
   }],
   awakeningStones: [null, null, null, null, null]
-};
-
-module.exports = {
-    LesserMightEssence,
-    DarkEssence,
-    BloodEssence,
-    SinEssence,
-    DoomEssence,
-    MagicEssence_Humphrey,
-    MightEssence_Humphrey,
-    WingEssence,
-    DragonEssence,
-    SwiftEssence,
-    WindEssence,
-    BalanceEssence,
-    MysticEssence,
-    RuneEssence,
-    KarmicEssence,
-    TrapEssence,
-    CharlatanEssence,
-    VolcanoEssence,
-    EarthEssence,
-    ShieldEssence
 };
