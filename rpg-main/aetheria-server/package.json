@@ -1,0 +1,17 @@
+{
+  "name": "rpg",
+  "version": "1.0.0",
+  "description": "Colyseus Server for the RPG project.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@colyseus/schema": "^3.0.64",
+    "@colyseus/tools": "^0.16.14",
+    "colyseus": "^0.16.5",
+    "express": "^4.19.2",
+    "simplex-noise": "^4.0.1",
+    "three": "^0.160.0"
+  }
+}
