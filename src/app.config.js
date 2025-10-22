@@ -6,14 +6,15 @@ const { playground } = require("@colyseus/playground");
  * Import your Room files
  */
 const { MyRoom } = require("./rooms/MyRoom");
+const GameRoom = require("./rooms/GameRoom");
 
 module.exports = config({
-
     initializeGameServer: (gameServer) => {
         /**
          * Define your room handlers:
          */
         gameServer.define('my_room', MyRoom);
+        gameServer.define('game_room', GameRoom);
     },
 
     initializeExpress: (app) => {
@@ -46,5 +47,4 @@ module.exports = config({
          * Before before gameServer.listen() is called.
          */
     }
-
 });

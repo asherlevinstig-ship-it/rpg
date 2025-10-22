@@ -3,12 +3,12 @@
   "name": "my-app",
   "version": "1.0.0",
   "description": "npm init template for bootstrapping an empty Colyseus project",
-  "main": "src/index.js",
+  "main": "index.js",
   "engines": {
     "node": ">= 20.9.0"
   },
   "scripts": {
-    "start": "node src/index.js",
+    "start": "node index.js",
     "loadtest": "node loadtest/example.js --room my_room --numClients 2",
     "test": "mocha test/**_test.js --exit --timeout 15000",
     "build": "exit 0"
@@ -29,7 +29,19 @@
     "@colyseus/monitor": "^0.16.0",
     "@colyseus/playground": "^0.16.0",
     "@colyseus/tools": "^0.16.0",
-    "colyseus": "^0.15.0",
-    "express": "^4.18.2"
-  }
+    "@colyseus/schema": "^3.0.0",
+    "colyseus": "^0.16.0",
+    "express": "^4.18.2",
+    "three": "^0.150.0",
+    "simplex-noise": "^4.0.1"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asherlevinstig-ship-it/rpg.git"
+  },
+  "keywords": [],
+  "type": "commonjs"
 }
